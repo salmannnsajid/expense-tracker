@@ -74,22 +74,22 @@ const MainAppShell = () => {
                 <NavigationLink
                   label="Home"
                   icon={<AiOutlineHome />}
-                  link="/"
+                  link="/expense-tracker/"
                 />
                 <NavigationLink
                   label="Add an Expense"
                   icon={<BsPlusCircle />}
-                  link="/newExpense"
+                  link="/newExpense/expense-tracker/"
                 />
                 <NavigationLink
                   label="Add / Update Your Budget"
                   icon={<MdAttachMoney />}
-                  link="/newBudget"
+                  link="/newBudget/expense-tracker/"
                 />
                 <NavigationLink
                   label="View Spending in Categories"
                   icon={<BsBarChartLine />}
-                  link="/categories"
+                  link="/categories/expense-tracker/"
                 />
               </Navbar>
             }
@@ -139,10 +139,19 @@ const MainAppShell = () => {
           >
             {/* Handle Routing */}
             <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/newExpense" element={<AddExpensePage />} />
-              <Route path="/newBudget" element={<AddBudgetPage />} />
-              <Route path="/categories" element={<DisplayCategoriesPage />} />
+              <Route path="/expense-tracker/" element={<HomePage />} />
+              <Route
+                path="/expense-tracker/newExpense"
+                element={<AddExpensePage />}
+              />
+              <Route
+                path="/expense-tracker/newBudget"
+                element={<AddBudgetPage />}
+              />
+              <Route
+                path="/expense-tracker/categories"
+                element={<DisplayCategoriesPage />}
+              />
             </Routes>
           </AppShell>
         </BrowserRouter>
