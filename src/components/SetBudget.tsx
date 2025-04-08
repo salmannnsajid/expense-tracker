@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, TextInput } from "@mantine/core";
 import HistoryContext from "../store/HistoryContext";
-import CategoriesContext from "../store/CategoriesContext"
+import CategoriesContext from "../store/CategoriesContext";
 
 const SetBudget = () => {
   const { addHistoryElement } = useContext(HistoryContext);
@@ -32,7 +32,7 @@ const SetBudget = () => {
             addCategory({
               label: "Budget",
               id: crypto.randomUUID(),
-              amount: -1*budget,
+              amount: -1 * budget,
             });
             addCategory({
               label: "Budget",
@@ -40,7 +40,7 @@ const SetBudget = () => {
               amount: value,
             });
             // navigates back to home page
-            navigate("/");
+            navigate("/expense-tracker/");
             addHistoryElement({
               label: "Budget has been set to $" + value,
               id: crypto.randomUUID(),

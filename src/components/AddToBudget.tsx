@@ -46,7 +46,7 @@ const AddToBudget = () => {
               amount: value,
             });
             // navigate to home page
-            navigate("/");
+            navigate("/expense-tracker/");
             addHistoryElement({
               label: label,
               amount: value,

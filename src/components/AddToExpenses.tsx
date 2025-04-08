@@ -114,7 +114,7 @@ const AddToExpenses = () => {
                 });
               });
               // navigate back to the home page
-              navigate("/");
+              navigate("/expense-tracker/");
               addHistoryElement({
                 label: label,
                 amount: value,

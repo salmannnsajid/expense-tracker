@@ -79,17 +79,17 @@ const MainAppShell = () => {
                 <NavigationLink
                   label="Add an Expense"
                   icon={<BsPlusCircle />}
-                  link="/newExpense/expense-tracker/"
+                  link="/expense-tracker/newExpense"
                 />
                 <NavigationLink
                   label="Add / Update Your Budget"
                   icon={<MdAttachMoney />}
-                  link="/newBudget/expense-tracker/"
+                  link="/expense-tracker/newBudget/"
                 />
                 <NavigationLink
                   label="View Spending in Categories"
                   icon={<BsBarChartLine />}
-                  link="/categories/expense-tracker/"
+                  link="/expense-tracker/categories/"
                 />
               </Navbar>
             }
