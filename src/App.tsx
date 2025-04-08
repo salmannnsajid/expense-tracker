@@ -16,7 +16,6 @@ export default function App() {
       }}
     >
       <Paper>
-        {/* Contexts */}
         <AvailableCategoriesContextProvider>
           <HistoryContextProvider>
             <CategoriesContextProvider>
